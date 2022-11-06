@@ -1,0 +1,27 @@
+<%- include("partials/header") %>
+<div class="container text-center">
+    <div class="row">
+        <% for(let i=0; i< 6; i++) { %>
+
+        <div class="col col-lg-4 col-md-6 col-12">
+            <div class="card" style="width: 18rem;">
+                <img src="<%= lables[i].recipe.image%>" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title"><%= lables[i].recipe.label %></h5>
+                    <p class="card-text">
+                        <ul class="card-ul">
+                            <li>Cuisine: <%= lables[i].recipe.cuisineType %></li>
+                            <li>Meal type: <%= lables[i].recipe.mealType %></li>
+                            <li>Dish Type: <%= lables[i].recipe.dishType %></li>
+                        </ul>
+                    </p>
+                    <a href="posts/<%= lables[i].recipe.label %>?ingredients=<%= lables[i].recipe.ingredientLines%>&time=<%=lables[i].recipe.totalTime%>&full=<%= lables[i].recipe.url %>" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+
+
+        <% } %>
+    </div>
+</div>
+<%- include("partials/footer") %>

@@ -1,0 +1,75 @@
+body{
+    background-color: #F2E9D0;
+    background-image: -webkit-linear-gradient(65deg, #EACEB4 50%, #F2E9D0 50%);
+    min-height: 1000px;
+	color: rgb(53, 52, 52);
+}
+/*==============Nav=====================*/
+.navbar{
+	font-size: 12px;
+    letter-spacing: 5px;
+}
+/*==============Body=====================*/
+h1{
+	margin: 4% 6%;
+	font-family: 'Pacifico', cursive;
+	font-size: 6rem;
+}
+.body-section{
+    text-align: center;
+}
+.search-lable{
+	margin-top: 1%;
+}
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited{
+    background-color: #BB5A5A !important;
+    border-color: #BB5A5A; 
+}
+/*===============CardSection====================*/
+img {
+	clip-path: circle(40%);
+	width: 200px;
+}
+.card{
+	margin: 0 auto; /* Added */
+	float: none; /* Added */
+	margin-top: 10px;
+	margin-bottom: 10px; /* Added */
+}
+.card-ul{
+	list-style: none;
+	text-align: left;
+}
+.param{
+	display: none;
+}
+/*===============Footer====================*/
+.footer-padding {
+	padding-bottom: 60px;
+}
+.footer {
+	position: relative;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	/* background-color: #F2E9D0; */
+}
+.footer p {
+	margin-top: 25px;
+	font-size: 12px;
+    color: #BB5A5A;
+}
+/*===============Post Page====================*/
+.post-row {
+	margin: 4% 15%;
+}
+.full-recipe{
+	text-align: center;
+}
+.post-col{
+	margin: 7% 0;
+}
+.post-title{
+	margin-left: 0;
+}

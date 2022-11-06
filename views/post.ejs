@@ -1,0 +1,19 @@
+<%- include("partials/header") %>
+<div class="post-row row">
+    <div class="post-col col col-lg-6 col-12">
+        <h1 class="post-title"><%= title %></h1>
+        <h4><em>Cooking Time <%= cookingTime %> minutes</em></h4>
+    </div>
+    <div class="post-col col col-lg-6 col-12">
+        <h3>Ingredients: </h3>
+        <ul>
+            <% ingredients.forEach(ingredient => { %>
+            <li> <%= ingredient %></li>
+            <% }); %>
+        </ul>
+    </div>
+</div>
+<div class="full-recipe">
+    <a class="navbar-brand" href="<%= fullRecipe %>"><em>CHECK FULL RECIPE</em></a>
+</div>
+<%- include("partials/footer") %>
